@@ -11,6 +11,7 @@ def deploy_simple_storage():
     transaction = simple_storage.store(15, {"from": account})
     transaction.wait(1)
     updated_stored_value = simple_storage.retrieve()
+    print()
 
     # for ganache
     # account = accounts[0]
